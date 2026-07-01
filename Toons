@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RizzNoutToons | Documentaries That Hit Different</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>RizzNoutToons</h1>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#featured">Featured</a>
+<a href="#categories">Categories</a>
+<a href="#about">About</a>
+
+<a class="subscribe" href="https://youtube.com/@rizznouttoons?si=aPnvIHxHK-3Ib9h-" target="_blank">
+
+Subscribe
+
+</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h2>Documentaries That Hit Different</h2>
+
+<p>
+
+Explore forgotten civilizations, shocking history,
+science mysteries and unbelievable true stories.
+
+</p>
+
+<div class="buttons">
+
+<a class="watch" href="https://youtube.com/@rizznouttoons?si=aPnvIHxHK-3Ib9h-" target="_blank">
+
+▶ Watch Now
+
+</a>
+
+<a class="info" href="#about">
+
+More Info
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="featured" class="section">
+
+<h2>Featured Documentaries</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="assets/thumb1.jpg">
+
+<h3>Lost Civilizations</h3>
+
+</div>
+
+<div class="card">
+
+<img src="assets/thumb2.jpg">
+
+<h3>Ancient Mysteries</h3>
+
+</div>
+
+<div class="card">
+
+<img src="assets/thumb3.jpg">
+
+<h3>Science Explained</h3>
+
+</div>
+
+<div class="card">
+
+<img src="assets/thumb4.jpg">
+
+<h3>History Secrets</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="categories" class="section">
+
+<h2>Browse Categories</h2>
+
+<div class="categories">
+
+<div class="category">
+
+🌍
+
+<h3>History</h3>
+
+</div>
+
+<div class="category">
+
+🏛️
+
+<h3>Lost Civilizations</h3>
+
+</div>
+
+<div class="category">
+
+🔬
+
+<h3>Science</h3>
+
+</div>
+
+<div class="category">
+
+🤯
+
+<h3>Mysteries</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="about" class="section about">
+
+<h2>About RizzNoutToons</h2>
+
+<p>
+
+Welcome to RizzNoutToons.
+
+Every documentary is designed to make complex
+history and science easy to understand through
+engaging storytelling and animation.
+
+New documentaries every week.
+
+</p>
+
+</section>
+
+
+
+<footer>
+
+<p>
+
+© 2026 RizzNoutToons
+
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>/* ==========================
+   RizzNoutToons - style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:#ffffff;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+.logo h1{
+    color:#e50914;
+    font-size:2rem;
+    font-weight:800;
+}
+
+nav{
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#e50914;
+}
+
+.subscribe{
+    background:#e50914;
+    padding:10px 18px;
+    border-radius:6px;
+}
+
+.subscribe:hover{
+    background:#ff2d38;
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    position:relative;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
+    url("../assets/hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:650px;
+    z-index:2;
+}
+
+.hero h2{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#dddddd;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:18px;
+}
+
+.watch,
+.info{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.watch{
+    background:#e50914;
+    color:white;
+}
+
+.watch:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(229,9,20,.5);
+}
+
+.info{
+    background:#2b2b2b;
+    color:white;
+}
+
+.info:hover{
+    background:#444;
+}
+
+/* Sections */
+
+.section{
+    padding:90px 8%;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:2.2rem;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#171717;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:18px;
+}
+
+/* Categories */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.category{
+    background:#171717;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.category:hover{
+    background:#e50914;
+    transform:translateY(-6px);
+}
+
+.category{
+    font-size:2rem;
+}
+
+.category h3{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+/* About */
+
+.about p{
+    color:#cccccc;
+    font-size:1.1rem;
+    line-height:2;
+    max-width:850px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:35px;
+    background:#000;
+    color:#888;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#e50914;
+    border-radius:10px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:18px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    text-align:center;
+    justify-content:center;
+}
+
+.hero h2{
+    font-size:2.7rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.section{
+    padding:70px 6%;
+}
+
+.card img{
+    height:220px;
+}
+
+}/* ==========================
+   RizzNoutToons - script.js
+========================== */
+
+// Sticky Header
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.style.background = "rgba(0,0,0,.95)";
+        header.style.boxShadow = "0 4px 20px rgba(0,0,0,.5)";
+    } else {
+        header.style.background = "rgba(0,0,0,.75)";
+        header.style.boxShadow = "none";
+    }
+});
+
+// Scroll Reveal Animation
+const revealElements = document.querySelectorAll(".section, .card, .category");
+
+const reveal = () => {
+    const trigger = window.innerHeight * 0.85;
+
+    revealElements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+        }
+    });
+};
+
+// Set initial hidden state
+revealElements.forEach(el => {
+    el.style.opacity = "0";
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all .8s ease";
+});
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
+
+// Hero Text Animation
+const heroTitle = document.querySelector(".hero h2");
+const heroText = document.querySelector(".hero p");
+
+window.addEventListener("load", () => {
+    heroTitle.style.opacity = "0";
+    heroTitle.style.transform = "translateY(40px)";
+
+    heroText.style.opacity = "0";
+    heroText.style.transform = "translateY(40px)";
+
+    setTimeout(() => {
+        heroTitle.style.transition = "1s";
+        heroTitle.style.opacity = "1";
+        heroTitle.style.transform = "translateY(0)";
+    }, 300);
+
+    setTimeout(() => {
+        heroText.style.transition = "1s";
+        heroText.style.opacity = "1";
+        heroText.style.transform = "translateY(0)";
+    }, 700);
+});
+
+// Card Hover Glow
+document.querySelectorAll(".card").forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+        card.style.boxShadow = "0 0 30px rgba(229,9,20,.4)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.boxShadow = "none";
+    });
+
+});
+
+// Back To Top Button
+const topBtn = document.createElement("button");
+
+topBtn.innerHTML = "↑";
+
+topBtn.style.position = "fixed";
+topBtn.style.bottom = "25px";
+topBtn.style.right = "25px";
+topBtn.style.width = "50px";
+topBtn.style.height = "50px";
+topBtn.style.border = "none";
+topBtn.style.borderRadius = "50%";
+topBtn.style.background = "#e50914";
+topBtn.style.color = "#fff";
+topBtn.style.fontSize = "22px";
+topBtn.style.cursor = "pointer";
+topBtn.style.display = "none";
+topBtn.style.zIndex = "1000";
+
+document.body.appendChild(topBtn);
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
+// Simple Auto-Rotating Featured Cards
+const cards = document.querySelectorAll(".card");
+
+let active = 0;
+
+setInterval(() => {
+
+    cards.forEach(card => {
+        card.style.transform = "scale(1)";
+        card.style.zIndex = "1";
+    });
+
+    cards[active].style.transform = "scale(1.05)";
+    cards[active].style.zIndex = "5";
+
+    active++;
+
+    if (active >= cards.length) {
+        active = 0;
+    }
+
+}, 3000);
+
+console.log("RizzNoutToons Website Loaded Successfully!");"videos.html"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos | RizzNoutToons</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>RizzNoutToons</h1>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="videos.html">Videos</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="section">
+
+<h2>Latest Videos</h2>
+
+<div class="cards">
+
+<div class="card">
+<iframe width="100%" height="220"
+src="https://www.youtube.com/embed?listType=user_uploads&list=rizznouttoons"
+frameborder="0"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="card">
+<h3>More videos coming soon...</h3>
+<p>Upload new documentaries and replace these cards with your newest uploads.</p>
+</div>
+
+</div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+---
+
+"about.html"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | RizzNoutToons</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>RizzNoutToons</h1>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="videos.html">Videos</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="section about">
+
+<h2>About the Channel</h2>
+
+<p>
+
+RizzNoutToons creates animated documentaries,
+history videos, science explainers and fascinating mysteries.
+
+Our goal is to make learning entertaining through
+high-quality storytelling and animation.
+
+New documentaries are released regularly.
+
+</p>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+
+---
+
+"contact.html"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | RizzNoutToons</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h1>RizzNoutToons</h1>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="videos.html">Videos</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="section">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<br><br>
+
+<input type="email" placeholder="Email Address" required>
+
+<br><br>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<br><br>
+
+<button class="watch">Send Message</button>
+
+</form>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
